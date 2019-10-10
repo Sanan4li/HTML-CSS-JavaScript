@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Unique Web Solutions</title>
+	<meta name="Author" content=""/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header id="header">
+    <logo>
+        <img src="logo.png" width="500" height="150">
+    </logo>
+    <menu id="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#AboutUs">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            
+        </ul>
+        
+    </menu>    
+    
+    
+    
+</header><div id="home"></div>
+<br><br><br><br>
+<br><br><br><br>
+<div id="popup">
+   <div id="cross"><img src="close.png" height="20" width="20"></div>
+    <h1 id="stay">Stay Updated!</h1>
+    <h1 id="dont">Don't Forget to Subscribe Us </h1><br>
+    <input type="button" id="ok" value="OK">
+    <input type="text" placeholder="Enter Your Email" id="email" required="true"><br><br>
+    <input type="button" value="Subscribe" id="subscribe">
+</div>
+
+
+<div id="images">
+<img src="web-desigining.jpg"><img src="img.png">    
+</div>
+<div id="services">
+    <h1>Our Services</h1>
+       <div id="Static">
+        <img src="static.jpg" width="350px" height="350px" id="stimg">
+        <img src="dynamic.jpg" width="350px" height="350px" id="dnimg">
+        <img src="SEO.jpg" width="350px" height="350px" id="SEOimg">
+    
+    </div>
+    
+    
+</div>
+<div id="paragraphs">
+    <h1>Lets Design With Unique Solutions</h1>
+    <p>
+        Design a website is main objective of all businesses, industries and sole proprietors for their online presence to keep their client up to date with new product information. Real Web Idea trying its level best to serve and guide our website designing, development and SEO clients regarding their websites. Searching Web Designing Company in Lahore Pakistan is always difficult and unexpected experience for those who are going to get a quote for their website project. Day by day Website designing clients Lahore are getting awareness for web ideas and solutions for their business online promotions using SEO Services Companies and publishing their latest information under a search engine optimization company’s environment. Web Design project always should given to that company who has its own presence on a local address. Never call anyone for meeting to your own office but you should visit their office first for an observation and ask all the question and queries on their business point. Thus you could know better who is going to develop your website project. Many cases we have seen in past 1 year for Web designing companies scamming and frauds. Let me explain how; when you place an Inquiry for your website designing or development to any software house or web company. They will force you that they will visit your business place for meeting. Definitely you should call them for meeting but always visit them first for your long run and satisfied business relation with that company. Real Web Idea will prove high level support to our clients 24/7 before getting any website contract and after project delivery. Be sure before assigning your website task to any Web development company in Lahore Pakistan.
+        
+        
+    
+</div>
+
+
+
+<div id="team">
+   <h1>Meet Our Team</h1>
+    
+    <div id="Sanan">
+    <p id="name">Sanan Ali</p>
+    <img src="10178139_563961903717061_6367663713959526033_n.jpg" width="250" height="300" id="AliHaider">
+    
+    <p>Search Engine Optimizer</p>
+    </div>
+    
+    <div id="Ayesha">
+    <p id="name">Ayesha</p>
+    <img src="ayesha.jpg" width="250" height="300" id="AliHaider">
+    
+    <p>Graphic Designer</p>
+    </div>
+    
+    
+    <div id="Hamza">
+    <p id="name">Hamza Altaf</p>
+    <img src="hamza_Altaf.jpg" width="250" height="300" id="AliHaider">
+    
+    <p>Backend Developer</p>
+    </div>
+    
+    
+    <div id="Ali">
+    <p id="name">Ali Haider</p>
+    <img src="Ali_haider.jpg" width="250" height="300" id="AliHaider">
+    
+    <p>Front End Designer</p>
+    </div>
+
+
+
+</div>
+<div id="clear"></div>
+
+<div id="AboutUs">
+    <h1>About Us</h1>
+    <p>We are students of Software Engineering in University of Gujrat. We are passionate Programmer & Web Developer. We are always willing to turn our passion to services.Our mission is to provide technology to all level of people. We are working hard to take our country in the list of developed country in the world. </p>
+</div>    
+
+<div id="ContactUs">
+    <h1>Contact Us</h1>
+    <form>
+        <input type="text" placeholder="Your Name " required="true" id="name">
+        <input type="email" placeholder="Your Email" required="true" id="email1">
+        <br><textarea required="true" id="message" placeholder="Your Message"></textarea>
+        <br>    <input type="submit" value="Send" id="send">
+    </form><br>
+    </div>
+<footer id="footer">
+    <br><hr>
+    <a href="#home">Go to Top</a>
+</footer>
+<script>
+    // these are variables to use 
+    var services = document.getElementById("services");
+    var team = document.getElementById("team");
+    var paragraph = document.getElementById("paragraphs");
+    var header = document.getElementById("header");
+    var cross = document.getElementById("cross");
+    var popup = document.getElementById("popup");
+    var subscribe_button = document.getElementById("subscribe");
+    var email = document.getElementById("email");
+    var stay = document.getElementById("stay");
+    var dont = document.getElementById("dont");
+    var ok_button = document.getElementById("ok");
+    var AboutUs = document.getElementById("AboutUs");
+    var ContactUs = document.getElementById("ContactUs");
+    var footer = document.getElementById("footer");
+    
+    // scroll function to hide and display elements
+    window.onscroll = function(){
+    var pos  = window.pageYOffset;
+        if(pos>5){
+            popup.style.opacity = "1";
+            popup.style.animationName = "show";
+            popup.style.animationDuration = "2s";
+            //popup.style.opacity = "0";
+            popup.style.opacity = "1";
+            
+        }
+        if(pos>170){
+            popup.style.opacity = "0";
+            
+            
+        }
+        if(pos>200){
+            
+            services.style.opacity = "1";
+            header.style.height  = "130px";
+            services.style.marginTop = "20px";
+        }
+        if(pos<200){
+            services.style.opacity = "0";
+            services.style.marginTop = "80px";
+            header.style.height  = "200px";
+        }
+        if(pos>300){
+            popup.style.display = "none";
+        }
+        if(pos>650){
+            
+            paragraph.style.opacity = "1";
+            paragraph.style.marginTop = "180px";
+        }
+         if(pos<650){
+            paragraph.style.opacity = "0";
+             paragraph.style.marginTop = "220px";
+        }
+        if(pos>1250){
+            team.style.opacity = "1";
+            team.style.marginTop = "90px";
+        }
+        if(pos<1250){
+            team.style.opacity = "0";
+            team.style.marginTop = "130px";
+        }
+        if(pos>1900){
+            AboutUs.style.opacity = "1";
+            AboutUs.style.marginTop = "90px";
+        }
+        if(pos<1900){
+            AboutUs.style.opacity = "0";
+            AboutUs.style.marginTop = "130px";
+        }
+        if(pos>2100){
+            ContactUs.style.opacity = "1";
+            //ContactUs.style.marginTop = "20px";
+        }
+        
+        if(pos<2100){
+            ContactUs.style.opacity = "0";
+           // ContactUs.style.marginTop = "50px";
+        }
+        if(pos>2300){
+            footer.style.opacity = "1";
+        }
+        if(pos<2300){
+            footer.style.opacity = "0";
+        }
+    }
+    // subscribe button functions to hide and display elements
+    subscribe_button.onclick = function(){
+        if(email.value==""){
+            alert("Please Enter Your Email to Subscribe");
+        }
+        else{
+             ok_button.style.display = "block";
+            subscribe_button.style.opacity = "0";
+            subscribe_button.style.display = "none";
+            ok_button.style.opacity = "1";
+           
+            email.style.opacity = "0";
+            email.style.display = "none";
+            stay.innerHTML="Thanks for Subscribing Us";
+            dont.innerHTML = "Stay Blessed!";
+        }
+    }
+    cross.onclick = function(){
+        popup.style.opacity = "0";
+        popup.style.display = "none";
+    }
+    ok_button.onclick = function(){
+        popup.style.opacity = "0";
+        popup.style.display = "none";
+    }
+    
+    </script>
+</body>
+</html>
